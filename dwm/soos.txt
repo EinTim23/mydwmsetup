@@ -1,0 +1,1799 @@
+dwm build options:
+CFLAGS   = -std=c99 -pedantic -Wall -Wno-deprecated-declarations -Os -I/usr/X11R6/include -I/usr/include/freetype2 -D_DEFAULT_SOURCE -D_BSD_SOURCE -D_POSIX_C_SOURCE=200809L -DVERSION="6.2" -DXINERAMA
+LDFLAGS  = -L/usr/X11R6/lib -lX11 -lXinerama -lfontconfig -lXft
+CC       = cc
+cc -c -std=c99 -pedantic -Wall -Wno-deprecated-declarations -Os -I/usr/X11R6/include -I/usr/include/freetype2 -D_DEFAULT_SOURCE -D_BSD_SOURCE -D_POSIX_C_SOURCE=200809L -DVERSION=\"6.2\" -DXINERAMA dwm.c
+In Datei, eingebunden von dwm.c:273:
+config.h:89:1: Fehler: zusätzliche geschweifte Klammern am Ende der Initialisierung
+   89 | { MODKEY,                       XK_f,      setlayout,      {.v = &layouts[1]} },
+      | ^
+config.h:89:1: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+config.h:89:60: Fehler: zusätzliche geschweifte Klammern am Ende der Initialisierung
+   89 | { MODKEY,                       XK_f,      setlayout,      {.v = &layouts[1]} },
+      |                                                            ^
+config.h:89:60: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+config.h:89:1: Warnung: Elementüberschreitung in struct-Initialisierung
+   89 | { MODKEY,                       XK_f,      setlayout,      {.v = &layouts[1]} },
+      | ^
+config.h:89:1: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+config.h:90:9: Fehler: zusätzliche geschweifte Klammern am Ende der Initialisierung
+   90 |         { MODKEY,                       XK_m,      setlayout,      {.v = &layouts[2]} },
+      |         ^
+config.h:90:9: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+config.h:90:68: Fehler: zusätzliche geschweifte Klammern am Ende der Initialisierung
+   90 |         { MODKEY,                       XK_m,      setlayout,      {.v = &layouts[2]} },
+      |                                                                    ^
+config.h:90:68: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+config.h:90:9: Warnung: Elementüberschreitung in struct-Initialisierung
+   90 |         { MODKEY,                       XK_m,      setlayout,      {.v = &layouts[2]} },
+      |         ^
+config.h:90:9: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+config.h:91:9: Fehler: zusätzliche geschweifte Klammern am Ende der Initialisierung
+   91 |         { MODKEY,                       XK_space,  setlayout,      {0} },
+      |         ^
+config.h:91:9: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+config.h:91:68: Fehler: zusätzliche geschweifte Klammern am Ende der Initialisierung
+   91 |         { MODKEY,                       XK_space,  setlayout,      {0} },
+      |                                                                    ^
+config.h:91:68: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+config.h:91:9: Warnung: Elementüberschreitung in struct-Initialisierung
+   91 |         { MODKEY,                       XK_space,  setlayout,      {0} },
+      |         ^
+config.h:91:9: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+config.h:92:9: Fehler: zusätzliche geschweifte Klammern am Ende der Initialisierung
+   92 |         { MODKEY|ShiftMask,             XK_space,  togglefloating, {0} },
+      |         ^
+config.h:92:9: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+config.h:92:68: Fehler: zusätzliche geschweifte Klammern am Ende der Initialisierung
+   92 |         { MODKEY|ShiftMask,             XK_space,  togglefloating, {0} },
+      |                                                                    ^
+config.h:92:68: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+config.h:92:9: Warnung: Elementüberschreitung in struct-Initialisierung
+   92 |         { MODKEY|ShiftMask,             XK_space,  togglefloating, {0} },
+      |         ^
+config.h:92:9: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+config.h:93:9: Fehler: zusätzliche geschweifte Klammern am Ende der Initialisierung
+   93 |         { MODKEY,                       XK_0,      view,           {.ui = ~0 } },
+      |         ^
+config.h:93:9: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+config.h:93:68: Fehler: zusätzliche geschweifte Klammern am Ende der Initialisierung
+   93 |         { MODKEY,                       XK_0,      view,           {.ui = ~0 } },
+      |                                                                    ^
+config.h:93:68: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+config.h:93:9: Warnung: Elementüberschreitung in struct-Initialisierung
+   93 |         { MODKEY,                       XK_0,      view,           {.ui = ~0 } },
+      |         ^
+config.h:93:9: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+config.h:94:9: Fehler: zusätzliche geschweifte Klammern am Ende der Initialisierung
+   94 |         { MODKEY|ShiftMask,             XK_0,      tag,            {.ui = ~0 } },
+      |         ^
+config.h:94:9: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+config.h:94:68: Fehler: zusätzliche geschweifte Klammern am Ende der Initialisierung
+   94 |         { MODKEY|ShiftMask,             XK_0,      tag,            {.ui = ~0 } },
+      |                                                                    ^
+config.h:94:68: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+config.h:94:9: Warnung: Elementüberschreitung in struct-Initialisierung
+   94 |         { MODKEY|ShiftMask,             XK_0,      tag,            {.ui = ~0 } },
+      |         ^
+config.h:94:9: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+config.h:95:9: Fehler: zusätzliche geschweifte Klammern am Ende der Initialisierung
+   95 |         { MODKEY,                       XK_comma,  focusmon,       {.i = -1 } },
+      |         ^
+config.h:95:9: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+config.h:95:68: Fehler: zusätzliche geschweifte Klammern am Ende der Initialisierung
+   95 |         { MODKEY,                       XK_comma,  focusmon,       {.i = -1 } },
+      |                                                                    ^
+config.h:95:68: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+config.h:95:9: Warnung: Elementüberschreitung in struct-Initialisierung
+   95 |         { MODKEY,                       XK_comma,  focusmon,       {.i = -1 } },
+      |         ^
+config.h:95:9: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+config.h:96:9: Fehler: zusätzliche geschweifte Klammern am Ende der Initialisierung
+   96 |         { MODKEY,                       XK_period, focusmon,       {.i = +1 } },
+      |         ^
+config.h:96:9: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+config.h:96:68: Fehler: zusätzliche geschweifte Klammern am Ende der Initialisierung
+   96 |         { MODKEY,                       XK_period, focusmon,       {.i = +1 } },
+      |                                                                    ^
+config.h:96:68: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+config.h:96:9: Warnung: Elementüberschreitung in struct-Initialisierung
+   96 |         { MODKEY,                       XK_period, focusmon,       {.i = +1 } },
+      |         ^
+config.h:96:9: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+config.h:97:9: Fehler: zusätzliche geschweifte Klammern am Ende der Initialisierung
+   97 |         { MODKEY|ShiftMask,             XK_comma,  tagmon,         {.i = -1 } },
+      |         ^
+config.h:97:9: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+config.h:97:68: Fehler: zusätzliche geschweifte Klammern am Ende der Initialisierung
+   97 |         { MODKEY|ShiftMask,             XK_comma,  tagmon,         {.i = -1 } },
+      |                                                                    ^
+config.h:97:68: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+config.h:97:9: Warnung: Elementüberschreitung in struct-Initialisierung
+   97 |         { MODKEY|ShiftMask,             XK_comma,  tagmon,         {.i = -1 } },
+      |         ^
+config.h:97:9: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+config.h:98:9: Fehler: zusätzliche geschweifte Klammern am Ende der Initialisierung
+   98 |         { MODKEY|ShiftMask,             XK_period, tagmon,         {.i = +1 } },
+      |         ^
+config.h:98:9: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+config.h:98:68: Fehler: zusätzliche geschweifte Klammern am Ende der Initialisierung
+   98 |         { MODKEY|ShiftMask,             XK_period, tagmon,         {.i = +1 } },
+      |                                                                    ^
+config.h:98:68: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+config.h:98:9: Warnung: Elementüberschreitung in struct-Initialisierung
+   98 |         { MODKEY|ShiftMask,             XK_period, tagmon,         {.i = +1 } },
+      |         ^
+config.h:98:9: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+In Datei, eingebunden von dwm.c:273:
+config.h:50:9: Fehler: zusätzliche geschweifte Klammern am Ende der Initialisierung
+   50 |         { MODKEY,                       KEY,      view,           {.ui = 1 << TAG} }, \
+      |         ^
+config.h:99:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+   99 |         TAGKEYS(                        XK_1,                      0)
+      |         ^~~~~~~
+config.h:50:9: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+   50 |         { MODKEY,                       KEY,      view,           {.ui = 1 << TAG} }, \
+      |         ^
+config.h:99:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+   99 |         TAGKEYS(                        XK_1,                      0)
+      |         ^~~~~~~
+config.h:50:67: Fehler: zusätzliche geschweifte Klammern am Ende der Initialisierung
+   50 |         { MODKEY,                       KEY,      view,           {.ui = 1 << TAG} }, \
+      |                                                                   ^
+config.h:99:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+   99 |         TAGKEYS(                        XK_1,                      0)
+      |         ^~~~~~~
+config.h:50:67: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+   50 |         { MODKEY,                       KEY,      view,           {.ui = 1 << TAG} }, \
+      |                                                                   ^
+config.h:99:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+   99 |         TAGKEYS(                        XK_1,                      0)
+      |         ^~~~~~~
+config.h:50:9: Warnung: Elementüberschreitung in struct-Initialisierung
+   50 |         { MODKEY,                       KEY,      view,           {.ui = 1 << TAG} }, \
+      |         ^
+config.h:99:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+   99 |         TAGKEYS(                        XK_1,                      0)
+      |         ^~~~~~~
+config.h:50:9: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+   50 |         { MODKEY,                       KEY,      view,           {.ui = 1 << TAG} }, \
+      |         ^
+config.h:99:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+   99 |         TAGKEYS(                        XK_1,                      0)
+      |         ^~~~~~~
+config.h:51:9: Fehler: zusätzliche geschweifte Klammern am Ende der Initialisierung
+   51 |         { MODKEY|ControlMask,           KEY,      toggleview,     {.ui = 1 << TAG} }, \
+      |         ^
+config.h:99:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+   99 |         TAGKEYS(                        XK_1,                      0)
+      |         ^~~~~~~
+config.h:51:9: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+   51 |         { MODKEY|ControlMask,           KEY,      toggleview,     {.ui = 1 << TAG} }, \
+      |         ^
+config.h:99:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+   99 |         TAGKEYS(                        XK_1,                      0)
+      |         ^~~~~~~
+config.h:51:67: Fehler: zusätzliche geschweifte Klammern am Ende der Initialisierung
+   51 |         { MODKEY|ControlMask,           KEY,      toggleview,     {.ui = 1 << TAG} }, \
+      |                                                                   ^
+config.h:99:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+   99 |         TAGKEYS(                        XK_1,                      0)
+      |         ^~~~~~~
+config.h:51:67: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+   51 |         { MODKEY|ControlMask,           KEY,      toggleview,     {.ui = 1 << TAG} }, \
+      |                                                                   ^
+config.h:99:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+   99 |         TAGKEYS(                        XK_1,                      0)
+      |         ^~~~~~~
+config.h:51:9: Warnung: Elementüberschreitung in struct-Initialisierung
+   51 |         { MODKEY|ControlMask,           KEY,      toggleview,     {.ui = 1 << TAG} }, \
+      |         ^
+config.h:99:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+   99 |         TAGKEYS(                        XK_1,                      0)
+      |         ^~~~~~~
+config.h:51:9: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+   51 |         { MODKEY|ControlMask,           KEY,      toggleview,     {.ui = 1 << TAG} }, \
+      |         ^
+config.h:99:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+   99 |         TAGKEYS(                        XK_1,                      0)
+      |         ^~~~~~~
+config.h:52:9: Fehler: zusätzliche geschweifte Klammern am Ende der Initialisierung
+   52 |         { MODKEY|ShiftMask,             KEY,      tag,            {.ui = 1 << TAG} }, \
+      |         ^
+config.h:99:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+   99 |         TAGKEYS(                        XK_1,                      0)
+      |         ^~~~~~~
+config.h:52:9: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+   52 |         { MODKEY|ShiftMask,             KEY,      tag,            {.ui = 1 << TAG} }, \
+      |         ^
+config.h:99:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+   99 |         TAGKEYS(                        XK_1,                      0)
+      |         ^~~~~~~
+config.h:52:67: Fehler: zusätzliche geschweifte Klammern am Ende der Initialisierung
+   52 |         { MODKEY|ShiftMask,             KEY,      tag,            {.ui = 1 << TAG} }, \
+      |                                                                   ^
+config.h:99:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+   99 |         TAGKEYS(                        XK_1,                      0)
+      |         ^~~~~~~
+config.h:52:67: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+   52 |         { MODKEY|ShiftMask,             KEY,      tag,            {.ui = 1 << TAG} }, \
+      |                                                                   ^
+config.h:99:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+   99 |         TAGKEYS(                        XK_1,                      0)
+      |         ^~~~~~~
+config.h:52:9: Warnung: Elementüberschreitung in struct-Initialisierung
+   52 |         { MODKEY|ShiftMask,             KEY,      tag,            {.ui = 1 << TAG} }, \
+      |         ^
+config.h:99:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+   99 |         TAGKEYS(                        XK_1,                      0)
+      |         ^~~~~~~
+config.h:52:9: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+   52 |         { MODKEY|ShiftMask,             KEY,      tag,            {.ui = 1 << TAG} }, \
+      |         ^
+config.h:99:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+   99 |         TAGKEYS(                        XK_1,                      0)
+      |         ^~~~~~~
+config.h:53:9: Fehler: zusätzliche geschweifte Klammern am Ende der Initialisierung
+   53 |         { MODKEY|ControlMask|ShiftMask, KEY,      toggletag,      {.ui = 1 << TAG} },
+      |         ^
+config.h:99:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+   99 |         TAGKEYS(                        XK_1,                      0)
+      |         ^~~~~~~
+config.h:53:9: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+   53 |         { MODKEY|ControlMask|ShiftMask, KEY,      toggletag,      {.ui = 1 << TAG} },
+      |         ^
+config.h:99:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+   99 |         TAGKEYS(                        XK_1,                      0)
+      |         ^~~~~~~
+config.h:53:67: Fehler: zusätzliche geschweifte Klammern am Ende der Initialisierung
+   53 |         { MODKEY|ControlMask|ShiftMask, KEY,      toggletag,      {.ui = 1 << TAG} },
+      |                                                                   ^
+config.h:99:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+   99 |         TAGKEYS(                        XK_1,                      0)
+      |         ^~~~~~~
+config.h:53:67: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+   53 |         { MODKEY|ControlMask|ShiftMask, KEY,      toggletag,      {.ui = 1 << TAG} },
+      |                                                                   ^
+config.h:99:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+   99 |         TAGKEYS(                        XK_1,                      0)
+      |         ^~~~~~~
+config.h:53:9: Warnung: Elementüberschreitung in struct-Initialisierung
+   53 |         { MODKEY|ControlMask|ShiftMask, KEY,      toggletag,      {.ui = 1 << TAG} },
+      |         ^
+config.h:99:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+   99 |         TAGKEYS(                        XK_1,                      0)
+      |         ^~~~~~~
+config.h:53:9: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+   53 |         { MODKEY|ControlMask|ShiftMask, KEY,      toggletag,      {.ui = 1 << TAG} },
+      |         ^
+config.h:99:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+   99 |         TAGKEYS(                        XK_1,                      0)
+      |         ^~~~~~~
+config.h:50:9: Fehler: zusätzliche geschweifte Klammern am Ende der Initialisierung
+   50 |         { MODKEY,                       KEY,      view,           {.ui = 1 << TAG} }, \
+      |         ^
+config.h:100:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  100 |         TAGKEYS(                        XK_2,                      1)
+      |         ^~~~~~~
+config.h:50:9: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+   50 |         { MODKEY,                       KEY,      view,           {.ui = 1 << TAG} }, \
+      |         ^
+config.h:100:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  100 |         TAGKEYS(                        XK_2,                      1)
+      |         ^~~~~~~
+config.h:50:67: Fehler: zusätzliche geschweifte Klammern am Ende der Initialisierung
+   50 |         { MODKEY,                       KEY,      view,           {.ui = 1 << TAG} }, \
+      |                                                                   ^
+config.h:100:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  100 |         TAGKEYS(                        XK_2,                      1)
+      |         ^~~~~~~
+config.h:50:67: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+   50 |         { MODKEY,                       KEY,      view,           {.ui = 1 << TAG} }, \
+      |                                                                   ^
+config.h:100:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  100 |         TAGKEYS(                        XK_2,                      1)
+      |         ^~~~~~~
+config.h:50:9: Warnung: Elementüberschreitung in struct-Initialisierung
+   50 |         { MODKEY,                       KEY,      view,           {.ui = 1 << TAG} }, \
+      |         ^
+config.h:100:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  100 |         TAGKEYS(                        XK_2,                      1)
+      |         ^~~~~~~
+config.h:50:9: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+   50 |         { MODKEY,                       KEY,      view,           {.ui = 1 << TAG} }, \
+      |         ^
+config.h:100:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  100 |         TAGKEYS(                        XK_2,                      1)
+      |         ^~~~~~~
+config.h:51:9: Fehler: zusätzliche geschweifte Klammern am Ende der Initialisierung
+   51 |         { MODKEY|ControlMask,           KEY,      toggleview,     {.ui = 1 << TAG} }, \
+      |         ^
+config.h:100:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  100 |         TAGKEYS(                        XK_2,                      1)
+      |         ^~~~~~~
+config.h:51:9: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+   51 |         { MODKEY|ControlMask,           KEY,      toggleview,     {.ui = 1 << TAG} }, \
+      |         ^
+config.h:100:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  100 |         TAGKEYS(                        XK_2,                      1)
+      |         ^~~~~~~
+config.h:51:67: Fehler: zusätzliche geschweifte Klammern am Ende der Initialisierung
+   51 |         { MODKEY|ControlMask,           KEY,      toggleview,     {.ui = 1 << TAG} }, \
+      |                                                                   ^
+config.h:100:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  100 |         TAGKEYS(                        XK_2,                      1)
+      |         ^~~~~~~
+config.h:51:67: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+   51 |         { MODKEY|ControlMask,           KEY,      toggleview,     {.ui = 1 << TAG} }, \
+      |                                                                   ^
+config.h:100:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  100 |         TAGKEYS(                        XK_2,                      1)
+      |         ^~~~~~~
+config.h:51:9: Warnung: Elementüberschreitung in struct-Initialisierung
+   51 |         { MODKEY|ControlMask,           KEY,      toggleview,     {.ui = 1 << TAG} }, \
+      |         ^
+config.h:100:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  100 |         TAGKEYS(                        XK_2,                      1)
+      |         ^~~~~~~
+config.h:51:9: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+   51 |         { MODKEY|ControlMask,           KEY,      toggleview,     {.ui = 1 << TAG} }, \
+      |         ^
+config.h:100:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  100 |         TAGKEYS(                        XK_2,                      1)
+      |         ^~~~~~~
+config.h:52:9: Fehler: zusätzliche geschweifte Klammern am Ende der Initialisierung
+   52 |         { MODKEY|ShiftMask,             KEY,      tag,            {.ui = 1 << TAG} }, \
+      |         ^
+config.h:100:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  100 |         TAGKEYS(                        XK_2,                      1)
+      |         ^~~~~~~
+config.h:52:9: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+   52 |         { MODKEY|ShiftMask,             KEY,      tag,            {.ui = 1 << TAG} }, \
+      |         ^
+config.h:100:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  100 |         TAGKEYS(                        XK_2,                      1)
+      |         ^~~~~~~
+config.h:52:67: Fehler: zusätzliche geschweifte Klammern am Ende der Initialisierung
+   52 |         { MODKEY|ShiftMask,             KEY,      tag,            {.ui = 1 << TAG} }, \
+      |                                                                   ^
+config.h:100:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  100 |         TAGKEYS(                        XK_2,                      1)
+      |         ^~~~~~~
+config.h:52:67: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+   52 |         { MODKEY|ShiftMask,             KEY,      tag,            {.ui = 1 << TAG} }, \
+      |                                                                   ^
+config.h:100:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  100 |         TAGKEYS(                        XK_2,                      1)
+      |         ^~~~~~~
+config.h:52:9: Warnung: Elementüberschreitung in struct-Initialisierung
+   52 |         { MODKEY|ShiftMask,             KEY,      tag,            {.ui = 1 << TAG} }, \
+      |         ^
+config.h:100:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  100 |         TAGKEYS(                        XK_2,                      1)
+      |         ^~~~~~~
+config.h:52:9: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+   52 |         { MODKEY|ShiftMask,             KEY,      tag,            {.ui = 1 << TAG} }, \
+      |         ^
+config.h:100:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  100 |         TAGKEYS(                        XK_2,                      1)
+      |         ^~~~~~~
+config.h:53:9: Fehler: zusätzliche geschweifte Klammern am Ende der Initialisierung
+   53 |         { MODKEY|ControlMask|ShiftMask, KEY,      toggletag,      {.ui = 1 << TAG} },
+      |         ^
+config.h:100:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  100 |         TAGKEYS(                        XK_2,                      1)
+      |         ^~~~~~~
+config.h:53:9: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+   53 |         { MODKEY|ControlMask|ShiftMask, KEY,      toggletag,      {.ui = 1 << TAG} },
+      |         ^
+config.h:100:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  100 |         TAGKEYS(                        XK_2,                      1)
+      |         ^~~~~~~
+config.h:53:67: Fehler: zusätzliche geschweifte Klammern am Ende der Initialisierung
+   53 |         { MODKEY|ControlMask|ShiftMask, KEY,      toggletag,      {.ui = 1 << TAG} },
+      |                                                                   ^
+config.h:100:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  100 |         TAGKEYS(                        XK_2,                      1)
+      |         ^~~~~~~
+config.h:53:67: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+   53 |         { MODKEY|ControlMask|ShiftMask, KEY,      toggletag,      {.ui = 1 << TAG} },
+      |                                                                   ^
+config.h:100:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  100 |         TAGKEYS(                        XK_2,                      1)
+      |         ^~~~~~~
+config.h:53:9: Warnung: Elementüberschreitung in struct-Initialisierung
+   53 |         { MODKEY|ControlMask|ShiftMask, KEY,      toggletag,      {.ui = 1 << TAG} },
+      |         ^
+config.h:100:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  100 |         TAGKEYS(                        XK_2,                      1)
+      |         ^~~~~~~
+config.h:53:9: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+   53 |         { MODKEY|ControlMask|ShiftMask, KEY,      toggletag,      {.ui = 1 << TAG} },
+      |         ^
+config.h:100:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  100 |         TAGKEYS(                        XK_2,                      1)
+      |         ^~~~~~~
+config.h:50:9: Fehler: zusätzliche geschweifte Klammern am Ende der Initialisierung
+   50 |         { MODKEY,                       KEY,      view,           {.ui = 1 << TAG} }, \
+      |         ^
+config.h:101:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  101 |         TAGKEYS(                        XK_3,                      2)
+      |         ^~~~~~~
+config.h:50:9: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+   50 |         { MODKEY,                       KEY,      view,           {.ui = 1 << TAG} }, \
+      |         ^
+config.h:101:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  101 |         TAGKEYS(                        XK_3,                      2)
+      |         ^~~~~~~
+config.h:50:67: Fehler: zusätzliche geschweifte Klammern am Ende der Initialisierung
+   50 |         { MODKEY,                       KEY,      view,           {.ui = 1 << TAG} }, \
+      |                                                                   ^
+config.h:101:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  101 |         TAGKEYS(                        XK_3,                      2)
+      |         ^~~~~~~
+config.h:50:67: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+   50 |         { MODKEY,                       KEY,      view,           {.ui = 1 << TAG} }, \
+      |                                                                   ^
+config.h:101:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  101 |         TAGKEYS(                        XK_3,                      2)
+      |         ^~~~~~~
+config.h:50:9: Warnung: Elementüberschreitung in struct-Initialisierung
+   50 |         { MODKEY,                       KEY,      view,           {.ui = 1 << TAG} }, \
+      |         ^
+config.h:101:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  101 |         TAGKEYS(                        XK_3,                      2)
+      |         ^~~~~~~
+config.h:50:9: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+   50 |         { MODKEY,                       KEY,      view,           {.ui = 1 << TAG} }, \
+      |         ^
+config.h:101:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  101 |         TAGKEYS(                        XK_3,                      2)
+      |         ^~~~~~~
+config.h:51:9: Fehler: zusätzliche geschweifte Klammern am Ende der Initialisierung
+   51 |         { MODKEY|ControlMask,           KEY,      toggleview,     {.ui = 1 << TAG} }, \
+      |         ^
+config.h:101:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  101 |         TAGKEYS(                        XK_3,                      2)
+      |         ^~~~~~~
+config.h:51:9: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+   51 |         { MODKEY|ControlMask,           KEY,      toggleview,     {.ui = 1 << TAG} }, \
+      |         ^
+config.h:101:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  101 |         TAGKEYS(                        XK_3,                      2)
+      |         ^~~~~~~
+config.h:51:67: Fehler: zusätzliche geschweifte Klammern am Ende der Initialisierung
+   51 |         { MODKEY|ControlMask,           KEY,      toggleview,     {.ui = 1 << TAG} }, \
+      |                                                                   ^
+config.h:101:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  101 |         TAGKEYS(                        XK_3,                      2)
+      |         ^~~~~~~
+config.h:51:67: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+   51 |         { MODKEY|ControlMask,           KEY,      toggleview,     {.ui = 1 << TAG} }, \
+      |                                                                   ^
+config.h:101:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  101 |         TAGKEYS(                        XK_3,                      2)
+      |         ^~~~~~~
+config.h:51:9: Warnung: Elementüberschreitung in struct-Initialisierung
+   51 |         { MODKEY|ControlMask,           KEY,      toggleview,     {.ui = 1 << TAG} }, \
+      |         ^
+config.h:101:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  101 |         TAGKEYS(                        XK_3,                      2)
+      |         ^~~~~~~
+config.h:51:9: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+   51 |         { MODKEY|ControlMask,           KEY,      toggleview,     {.ui = 1 << TAG} }, \
+      |         ^
+config.h:101:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  101 |         TAGKEYS(                        XK_3,                      2)
+      |         ^~~~~~~
+config.h:52:9: Fehler: zusätzliche geschweifte Klammern am Ende der Initialisierung
+   52 |         { MODKEY|ShiftMask,             KEY,      tag,            {.ui = 1 << TAG} }, \
+      |         ^
+config.h:101:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  101 |         TAGKEYS(                        XK_3,                      2)
+      |         ^~~~~~~
+config.h:52:9: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+   52 |         { MODKEY|ShiftMask,             KEY,      tag,            {.ui = 1 << TAG} }, \
+      |         ^
+config.h:101:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  101 |         TAGKEYS(                        XK_3,                      2)
+      |         ^~~~~~~
+config.h:52:67: Fehler: zusätzliche geschweifte Klammern am Ende der Initialisierung
+   52 |         { MODKEY|ShiftMask,             KEY,      tag,            {.ui = 1 << TAG} }, \
+      |                                                                   ^
+config.h:101:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  101 |         TAGKEYS(                        XK_3,                      2)
+      |         ^~~~~~~
+config.h:52:67: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+   52 |         { MODKEY|ShiftMask,             KEY,      tag,            {.ui = 1 << TAG} }, \
+      |                                                                   ^
+config.h:101:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  101 |         TAGKEYS(                        XK_3,                      2)
+      |         ^~~~~~~
+config.h:52:9: Warnung: Elementüberschreitung in struct-Initialisierung
+   52 |         { MODKEY|ShiftMask,             KEY,      tag,            {.ui = 1 << TAG} }, \
+      |         ^
+config.h:101:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  101 |         TAGKEYS(                        XK_3,                      2)
+      |         ^~~~~~~
+config.h:52:9: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+   52 |         { MODKEY|ShiftMask,             KEY,      tag,            {.ui = 1 << TAG} }, \
+      |         ^
+config.h:101:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  101 |         TAGKEYS(                        XK_3,                      2)
+      |         ^~~~~~~
+config.h:53:9: Fehler: zusätzliche geschweifte Klammern am Ende der Initialisierung
+   53 |         { MODKEY|ControlMask|ShiftMask, KEY,      toggletag,      {.ui = 1 << TAG} },
+      |         ^
+config.h:101:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  101 |         TAGKEYS(                        XK_3,                      2)
+      |         ^~~~~~~
+config.h:53:9: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+   53 |         { MODKEY|ControlMask|ShiftMask, KEY,      toggletag,      {.ui = 1 << TAG} },
+      |         ^
+config.h:101:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  101 |         TAGKEYS(                        XK_3,                      2)
+      |         ^~~~~~~
+config.h:53:67: Fehler: zusätzliche geschweifte Klammern am Ende der Initialisierung
+   53 |         { MODKEY|ControlMask|ShiftMask, KEY,      toggletag,      {.ui = 1 << TAG} },
+      |                                                                   ^
+config.h:101:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  101 |         TAGKEYS(                        XK_3,                      2)
+      |         ^~~~~~~
+config.h:53:67: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+   53 |         { MODKEY|ControlMask|ShiftMask, KEY,      toggletag,      {.ui = 1 << TAG} },
+      |                                                                   ^
+config.h:101:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  101 |         TAGKEYS(                        XK_3,                      2)
+      |         ^~~~~~~
+config.h:53:9: Warnung: Elementüberschreitung in struct-Initialisierung
+   53 |         { MODKEY|ControlMask|ShiftMask, KEY,      toggletag,      {.ui = 1 << TAG} },
+      |         ^
+config.h:101:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  101 |         TAGKEYS(                        XK_3,                      2)
+      |         ^~~~~~~
+config.h:53:9: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+   53 |         { MODKEY|ControlMask|ShiftMask, KEY,      toggletag,      {.ui = 1 << TAG} },
+      |         ^
+config.h:101:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  101 |         TAGKEYS(                        XK_3,                      2)
+      |         ^~~~~~~
+config.h:50:9: Fehler: zusätzliche geschweifte Klammern am Ende der Initialisierung
+   50 |         { MODKEY,                       KEY,      view,           {.ui = 1 << TAG} }, \
+      |         ^
+config.h:102:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  102 |         TAGKEYS(                        XK_4,                      3)
+      |         ^~~~~~~
+config.h:50:9: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+   50 |         { MODKEY,                       KEY,      view,           {.ui = 1 << TAG} }, \
+      |         ^
+config.h:102:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  102 |         TAGKEYS(                        XK_4,                      3)
+      |         ^~~~~~~
+config.h:50:67: Fehler: zusätzliche geschweifte Klammern am Ende der Initialisierung
+   50 |         { MODKEY,                       KEY,      view,           {.ui = 1 << TAG} }, \
+      |                                                                   ^
+config.h:102:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  102 |         TAGKEYS(                        XK_4,                      3)
+      |         ^~~~~~~
+config.h:50:67: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+   50 |         { MODKEY,                       KEY,      view,           {.ui = 1 << TAG} }, \
+      |                                                                   ^
+config.h:102:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  102 |         TAGKEYS(                        XK_4,                      3)
+      |         ^~~~~~~
+config.h:50:9: Warnung: Elementüberschreitung in struct-Initialisierung
+   50 |         { MODKEY,                       KEY,      view,           {.ui = 1 << TAG} }, \
+      |         ^
+config.h:102:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  102 |         TAGKEYS(                        XK_4,                      3)
+      |         ^~~~~~~
+config.h:50:9: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+   50 |         { MODKEY,                       KEY,      view,           {.ui = 1 << TAG} }, \
+      |         ^
+config.h:102:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  102 |         TAGKEYS(                        XK_4,                      3)
+      |         ^~~~~~~
+config.h:51:9: Fehler: zusätzliche geschweifte Klammern am Ende der Initialisierung
+   51 |         { MODKEY|ControlMask,           KEY,      toggleview,     {.ui = 1 << TAG} }, \
+      |         ^
+config.h:102:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  102 |         TAGKEYS(                        XK_4,                      3)
+      |         ^~~~~~~
+config.h:51:9: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+   51 |         { MODKEY|ControlMask,           KEY,      toggleview,     {.ui = 1 << TAG} }, \
+      |         ^
+config.h:102:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  102 |         TAGKEYS(                        XK_4,                      3)
+      |         ^~~~~~~
+config.h:51:67: Fehler: zusätzliche geschweifte Klammern am Ende der Initialisierung
+   51 |         { MODKEY|ControlMask,           KEY,      toggleview,     {.ui = 1 << TAG} }, \
+      |                                                                   ^
+config.h:102:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  102 |         TAGKEYS(                        XK_4,                      3)
+      |         ^~~~~~~
+config.h:51:67: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+   51 |         { MODKEY|ControlMask,           KEY,      toggleview,     {.ui = 1 << TAG} }, \
+      |                                                                   ^
+config.h:102:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  102 |         TAGKEYS(                        XK_4,                      3)
+      |         ^~~~~~~
+config.h:51:9: Warnung: Elementüberschreitung in struct-Initialisierung
+   51 |         { MODKEY|ControlMask,           KEY,      toggleview,     {.ui = 1 << TAG} }, \
+      |         ^
+config.h:102:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  102 |         TAGKEYS(                        XK_4,                      3)
+      |         ^~~~~~~
+config.h:51:9: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+   51 |         { MODKEY|ControlMask,           KEY,      toggleview,     {.ui = 1 << TAG} }, \
+      |         ^
+config.h:102:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  102 |         TAGKEYS(                        XK_4,                      3)
+      |         ^~~~~~~
+config.h:52:9: Fehler: zusätzliche geschweifte Klammern am Ende der Initialisierung
+   52 |         { MODKEY|ShiftMask,             KEY,      tag,            {.ui = 1 << TAG} }, \
+      |         ^
+config.h:102:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  102 |         TAGKEYS(                        XK_4,                      3)
+      |         ^~~~~~~
+config.h:52:9: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+   52 |         { MODKEY|ShiftMask,             KEY,      tag,            {.ui = 1 << TAG} }, \
+      |         ^
+config.h:102:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  102 |         TAGKEYS(                        XK_4,                      3)
+      |         ^~~~~~~
+config.h:52:67: Fehler: zusätzliche geschweifte Klammern am Ende der Initialisierung
+   52 |         { MODKEY|ShiftMask,             KEY,      tag,            {.ui = 1 << TAG} }, \
+      |                                                                   ^
+config.h:102:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  102 |         TAGKEYS(                        XK_4,                      3)
+      |         ^~~~~~~
+config.h:52:67: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+   52 |         { MODKEY|ShiftMask,             KEY,      tag,            {.ui = 1 << TAG} }, \
+      |                                                                   ^
+config.h:102:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  102 |         TAGKEYS(                        XK_4,                      3)
+      |         ^~~~~~~
+config.h:52:9: Warnung: Elementüberschreitung in struct-Initialisierung
+   52 |         { MODKEY|ShiftMask,             KEY,      tag,            {.ui = 1 << TAG} }, \
+      |         ^
+config.h:102:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  102 |         TAGKEYS(                        XK_4,                      3)
+      |         ^~~~~~~
+config.h:52:9: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+   52 |         { MODKEY|ShiftMask,             KEY,      tag,            {.ui = 1 << TAG} }, \
+      |         ^
+config.h:102:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  102 |         TAGKEYS(                        XK_4,                      3)
+      |         ^~~~~~~
+config.h:53:9: Fehler: zusätzliche geschweifte Klammern am Ende der Initialisierung
+   53 |         { MODKEY|ControlMask|ShiftMask, KEY,      toggletag,      {.ui = 1 << TAG} },
+      |         ^
+config.h:102:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  102 |         TAGKEYS(                        XK_4,                      3)
+      |         ^~~~~~~
+config.h:53:9: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+   53 |         { MODKEY|ControlMask|ShiftMask, KEY,      toggletag,      {.ui = 1 << TAG} },
+      |         ^
+config.h:102:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  102 |         TAGKEYS(                        XK_4,                      3)
+      |         ^~~~~~~
+config.h:53:67: Fehler: zusätzliche geschweifte Klammern am Ende der Initialisierung
+   53 |         { MODKEY|ControlMask|ShiftMask, KEY,      toggletag,      {.ui = 1 << TAG} },
+      |                                                                   ^
+config.h:102:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  102 |         TAGKEYS(                        XK_4,                      3)
+      |         ^~~~~~~
+config.h:53:67: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+   53 |         { MODKEY|ControlMask|ShiftMask, KEY,      toggletag,      {.ui = 1 << TAG} },
+      |                                                                   ^
+config.h:102:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  102 |         TAGKEYS(                        XK_4,                      3)
+      |         ^~~~~~~
+config.h:53:9: Warnung: Elementüberschreitung in struct-Initialisierung
+   53 |         { MODKEY|ControlMask|ShiftMask, KEY,      toggletag,      {.ui = 1 << TAG} },
+      |         ^
+config.h:102:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  102 |         TAGKEYS(                        XK_4,                      3)
+      |         ^~~~~~~
+config.h:53:9: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+   53 |         { MODKEY|ControlMask|ShiftMask, KEY,      toggletag,      {.ui = 1 << TAG} },
+      |         ^
+config.h:102:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  102 |         TAGKEYS(                        XK_4,                      3)
+      |         ^~~~~~~
+config.h:50:9: Fehler: zusätzliche geschweifte Klammern am Ende der Initialisierung
+   50 |         { MODKEY,                       KEY,      view,           {.ui = 1 << TAG} }, \
+      |         ^
+config.h:103:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  103 |         TAGKEYS(                        XK_5,                      4)
+      |         ^~~~~~~
+config.h:50:9: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+   50 |         { MODKEY,                       KEY,      view,           {.ui = 1 << TAG} }, \
+      |         ^
+config.h:103:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  103 |         TAGKEYS(                        XK_5,                      4)
+      |         ^~~~~~~
+config.h:50:67: Fehler: zusätzliche geschweifte Klammern am Ende der Initialisierung
+   50 |         { MODKEY,                       KEY,      view,           {.ui = 1 << TAG} }, \
+      |                                                                   ^
+config.h:103:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  103 |         TAGKEYS(                        XK_5,                      4)
+      |         ^~~~~~~
+config.h:50:67: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+   50 |         { MODKEY,                       KEY,      view,           {.ui = 1 << TAG} }, \
+      |                                                                   ^
+config.h:103:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  103 |         TAGKEYS(                        XK_5,                      4)
+      |         ^~~~~~~
+config.h:50:9: Warnung: Elementüberschreitung in struct-Initialisierung
+   50 |         { MODKEY,                       KEY,      view,           {.ui = 1 << TAG} }, \
+      |         ^
+config.h:103:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  103 |         TAGKEYS(                        XK_5,                      4)
+      |         ^~~~~~~
+config.h:50:9: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+   50 |         { MODKEY,                       KEY,      view,           {.ui = 1 << TAG} }, \
+      |         ^
+config.h:103:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  103 |         TAGKEYS(                        XK_5,                      4)
+      |         ^~~~~~~
+config.h:51:9: Fehler: zusätzliche geschweifte Klammern am Ende der Initialisierung
+   51 |         { MODKEY|ControlMask,           KEY,      toggleview,     {.ui = 1 << TAG} }, \
+      |         ^
+config.h:103:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  103 |         TAGKEYS(                        XK_5,                      4)
+      |         ^~~~~~~
+config.h:51:9: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+   51 |         { MODKEY|ControlMask,           KEY,      toggleview,     {.ui = 1 << TAG} }, \
+      |         ^
+config.h:103:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  103 |         TAGKEYS(                        XK_5,                      4)
+      |         ^~~~~~~
+config.h:51:67: Fehler: zusätzliche geschweifte Klammern am Ende der Initialisierung
+   51 |         { MODKEY|ControlMask,           KEY,      toggleview,     {.ui = 1 << TAG} }, \
+      |                                                                   ^
+config.h:103:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  103 |         TAGKEYS(                        XK_5,                      4)
+      |         ^~~~~~~
+config.h:51:67: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+   51 |         { MODKEY|ControlMask,           KEY,      toggleview,     {.ui = 1 << TAG} }, \
+      |                                                                   ^
+config.h:103:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  103 |         TAGKEYS(                        XK_5,                      4)
+      |         ^~~~~~~
+config.h:51:9: Warnung: Elementüberschreitung in struct-Initialisierung
+   51 |         { MODKEY|ControlMask,           KEY,      toggleview,     {.ui = 1 << TAG} }, \
+      |         ^
+config.h:103:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  103 |         TAGKEYS(                        XK_5,                      4)
+      |         ^~~~~~~
+config.h:51:9: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+   51 |         { MODKEY|ControlMask,           KEY,      toggleview,     {.ui = 1 << TAG} }, \
+      |         ^
+config.h:103:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  103 |         TAGKEYS(                        XK_5,                      4)
+      |         ^~~~~~~
+config.h:52:9: Fehler: zusätzliche geschweifte Klammern am Ende der Initialisierung
+   52 |         { MODKEY|ShiftMask,             KEY,      tag,            {.ui = 1 << TAG} }, \
+      |         ^
+config.h:103:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  103 |         TAGKEYS(                        XK_5,                      4)
+      |         ^~~~~~~
+config.h:52:9: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+   52 |         { MODKEY|ShiftMask,             KEY,      tag,            {.ui = 1 << TAG} }, \
+      |         ^
+config.h:103:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  103 |         TAGKEYS(                        XK_5,                      4)
+      |         ^~~~~~~
+config.h:52:67: Fehler: zusätzliche geschweifte Klammern am Ende der Initialisierung
+   52 |         { MODKEY|ShiftMask,             KEY,      tag,            {.ui = 1 << TAG} }, \
+      |                                                                   ^
+config.h:103:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  103 |         TAGKEYS(                        XK_5,                      4)
+      |         ^~~~~~~
+config.h:52:67: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+   52 |         { MODKEY|ShiftMask,             KEY,      tag,            {.ui = 1 << TAG} }, \
+      |                                                                   ^
+config.h:103:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  103 |         TAGKEYS(                        XK_5,                      4)
+      |         ^~~~~~~
+config.h:52:9: Warnung: Elementüberschreitung in struct-Initialisierung
+   52 |         { MODKEY|ShiftMask,             KEY,      tag,            {.ui = 1 << TAG} }, \
+      |         ^
+config.h:103:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  103 |         TAGKEYS(                        XK_5,                      4)
+      |         ^~~~~~~
+config.h:52:9: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+   52 |         { MODKEY|ShiftMask,             KEY,      tag,            {.ui = 1 << TAG} }, \
+      |         ^
+config.h:103:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  103 |         TAGKEYS(                        XK_5,                      4)
+      |         ^~~~~~~
+config.h:53:9: Fehler: zusätzliche geschweifte Klammern am Ende der Initialisierung
+   53 |         { MODKEY|ControlMask|ShiftMask, KEY,      toggletag,      {.ui = 1 << TAG} },
+      |         ^
+config.h:103:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  103 |         TAGKEYS(                        XK_5,                      4)
+      |         ^~~~~~~
+config.h:53:9: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+   53 |         { MODKEY|ControlMask|ShiftMask, KEY,      toggletag,      {.ui = 1 << TAG} },
+      |         ^
+config.h:103:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  103 |         TAGKEYS(                        XK_5,                      4)
+      |         ^~~~~~~
+config.h:53:67: Fehler: zusätzliche geschweifte Klammern am Ende der Initialisierung
+   53 |         { MODKEY|ControlMask|ShiftMask, KEY,      toggletag,      {.ui = 1 << TAG} },
+      |                                                                   ^
+config.h:103:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  103 |         TAGKEYS(                        XK_5,                      4)
+      |         ^~~~~~~
+config.h:53:67: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+   53 |         { MODKEY|ControlMask|ShiftMask, KEY,      toggletag,      {.ui = 1 << TAG} },
+      |                                                                   ^
+config.h:103:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  103 |         TAGKEYS(                        XK_5,                      4)
+      |         ^~~~~~~
+config.h:53:9: Warnung: Elementüberschreitung in struct-Initialisierung
+   53 |         { MODKEY|ControlMask|ShiftMask, KEY,      toggletag,      {.ui = 1 << TAG} },
+      |         ^
+config.h:103:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  103 |         TAGKEYS(                        XK_5,                      4)
+      |         ^~~~~~~
+config.h:53:9: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+   53 |         { MODKEY|ControlMask|ShiftMask, KEY,      toggletag,      {.ui = 1 << TAG} },
+      |         ^
+config.h:103:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  103 |         TAGKEYS(                        XK_5,                      4)
+      |         ^~~~~~~
+config.h:50:9: Fehler: zusätzliche geschweifte Klammern am Ende der Initialisierung
+   50 |         { MODKEY,                       KEY,      view,           {.ui = 1 << TAG} }, \
+      |         ^
+config.h:104:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  104 |         TAGKEYS(                        XK_6,                      5)
+      |         ^~~~~~~
+config.h:50:9: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+   50 |         { MODKEY,                       KEY,      view,           {.ui = 1 << TAG} }, \
+      |         ^
+config.h:104:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  104 |         TAGKEYS(                        XK_6,                      5)
+      |         ^~~~~~~
+config.h:50:67: Fehler: zusätzliche geschweifte Klammern am Ende der Initialisierung
+   50 |         { MODKEY,                       KEY,      view,           {.ui = 1 << TAG} }, \
+      |                                                                   ^
+config.h:104:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  104 |         TAGKEYS(                        XK_6,                      5)
+      |         ^~~~~~~
+config.h:50:67: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+   50 |         { MODKEY,                       KEY,      view,           {.ui = 1 << TAG} }, \
+      |                                                                   ^
+config.h:104:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  104 |         TAGKEYS(                        XK_6,                      5)
+      |         ^~~~~~~
+config.h:50:9: Warnung: Elementüberschreitung in struct-Initialisierung
+   50 |         { MODKEY,                       KEY,      view,           {.ui = 1 << TAG} }, \
+      |         ^
+config.h:104:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  104 |         TAGKEYS(                        XK_6,                      5)
+      |         ^~~~~~~
+config.h:50:9: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+   50 |         { MODKEY,                       KEY,      view,           {.ui = 1 << TAG} }, \
+      |         ^
+config.h:104:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  104 |         TAGKEYS(                        XK_6,                      5)
+      |         ^~~~~~~
+config.h:51:9: Fehler: zusätzliche geschweifte Klammern am Ende der Initialisierung
+   51 |         { MODKEY|ControlMask,           KEY,      toggleview,     {.ui = 1 << TAG} }, \
+      |         ^
+config.h:104:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  104 |         TAGKEYS(                        XK_6,                      5)
+      |         ^~~~~~~
+config.h:51:9: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+   51 |         { MODKEY|ControlMask,           KEY,      toggleview,     {.ui = 1 << TAG} }, \
+      |         ^
+config.h:104:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  104 |         TAGKEYS(                        XK_6,                      5)
+      |         ^~~~~~~
+config.h:51:67: Fehler: zusätzliche geschweifte Klammern am Ende der Initialisierung
+   51 |         { MODKEY|ControlMask,           KEY,      toggleview,     {.ui = 1 << TAG} }, \
+      |                                                                   ^
+config.h:104:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  104 |         TAGKEYS(                        XK_6,                      5)
+      |         ^~~~~~~
+config.h:51:67: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+   51 |         { MODKEY|ControlMask,           KEY,      toggleview,     {.ui = 1 << TAG} }, \
+      |                                                                   ^
+config.h:104:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  104 |         TAGKEYS(                        XK_6,                      5)
+      |         ^~~~~~~
+config.h:51:9: Warnung: Elementüberschreitung in struct-Initialisierung
+   51 |         { MODKEY|ControlMask,           KEY,      toggleview,     {.ui = 1 << TAG} }, \
+      |         ^
+config.h:104:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  104 |         TAGKEYS(                        XK_6,                      5)
+      |         ^~~~~~~
+config.h:51:9: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+   51 |         { MODKEY|ControlMask,           KEY,      toggleview,     {.ui = 1 << TAG} }, \
+      |         ^
+config.h:104:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  104 |         TAGKEYS(                        XK_6,                      5)
+      |         ^~~~~~~
+config.h:52:9: Fehler: zusätzliche geschweifte Klammern am Ende der Initialisierung
+   52 |         { MODKEY|ShiftMask,             KEY,      tag,            {.ui = 1 << TAG} }, \
+      |         ^
+config.h:104:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  104 |         TAGKEYS(                        XK_6,                      5)
+      |         ^~~~~~~
+config.h:52:9: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+   52 |         { MODKEY|ShiftMask,             KEY,      tag,            {.ui = 1 << TAG} }, \
+      |         ^
+config.h:104:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  104 |         TAGKEYS(                        XK_6,                      5)
+      |         ^~~~~~~
+config.h:52:67: Fehler: zusätzliche geschweifte Klammern am Ende der Initialisierung
+   52 |         { MODKEY|ShiftMask,             KEY,      tag,            {.ui = 1 << TAG} }, \
+      |                                                                   ^
+config.h:104:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  104 |         TAGKEYS(                        XK_6,                      5)
+      |         ^~~~~~~
+config.h:52:67: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+   52 |         { MODKEY|ShiftMask,             KEY,      tag,            {.ui = 1 << TAG} }, \
+      |                                                                   ^
+config.h:104:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  104 |         TAGKEYS(                        XK_6,                      5)
+      |         ^~~~~~~
+config.h:52:9: Warnung: Elementüberschreitung in struct-Initialisierung
+   52 |         { MODKEY|ShiftMask,             KEY,      tag,            {.ui = 1 << TAG} }, \
+      |         ^
+config.h:104:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  104 |         TAGKEYS(                        XK_6,                      5)
+      |         ^~~~~~~
+config.h:52:9: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+   52 |         { MODKEY|ShiftMask,             KEY,      tag,            {.ui = 1 << TAG} }, \
+      |         ^
+config.h:104:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  104 |         TAGKEYS(                        XK_6,                      5)
+      |         ^~~~~~~
+config.h:53:9: Fehler: zusätzliche geschweifte Klammern am Ende der Initialisierung
+   53 |         { MODKEY|ControlMask|ShiftMask, KEY,      toggletag,      {.ui = 1 << TAG} },
+      |         ^
+config.h:104:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  104 |         TAGKEYS(                        XK_6,                      5)
+      |         ^~~~~~~
+config.h:53:9: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+   53 |         { MODKEY|ControlMask|ShiftMask, KEY,      toggletag,      {.ui = 1 << TAG} },
+      |         ^
+config.h:104:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  104 |         TAGKEYS(                        XK_6,                      5)
+      |         ^~~~~~~
+config.h:53:67: Fehler: zusätzliche geschweifte Klammern am Ende der Initialisierung
+   53 |         { MODKEY|ControlMask|ShiftMask, KEY,      toggletag,      {.ui = 1 << TAG} },
+      |                                                                   ^
+config.h:104:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  104 |         TAGKEYS(                        XK_6,                      5)
+      |         ^~~~~~~
+config.h:53:67: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+   53 |         { MODKEY|ControlMask|ShiftMask, KEY,      toggletag,      {.ui = 1 << TAG} },
+      |                                                                   ^
+config.h:104:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  104 |         TAGKEYS(                        XK_6,                      5)
+      |         ^~~~~~~
+config.h:53:9: Warnung: Elementüberschreitung in struct-Initialisierung
+   53 |         { MODKEY|ControlMask|ShiftMask, KEY,      toggletag,      {.ui = 1 << TAG} },
+      |         ^
+config.h:104:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  104 |         TAGKEYS(                        XK_6,                      5)
+      |         ^~~~~~~
+config.h:53:9: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+   53 |         { MODKEY|ControlMask|ShiftMask, KEY,      toggletag,      {.ui = 1 << TAG} },
+      |         ^
+config.h:104:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  104 |         TAGKEYS(                        XK_6,                      5)
+      |         ^~~~~~~
+config.h:50:9: Fehler: zusätzliche geschweifte Klammern am Ende der Initialisierung
+   50 |         { MODKEY,                       KEY,      view,           {.ui = 1 << TAG} }, \
+      |         ^
+config.h:105:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  105 |         TAGKEYS(                        XK_7,                      6)
+      |         ^~~~~~~
+config.h:50:9: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+   50 |         { MODKEY,                       KEY,      view,           {.ui = 1 << TAG} }, \
+      |         ^
+config.h:105:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  105 |         TAGKEYS(                        XK_7,                      6)
+      |         ^~~~~~~
+config.h:50:67: Fehler: zusätzliche geschweifte Klammern am Ende der Initialisierung
+   50 |         { MODKEY,                       KEY,      view,           {.ui = 1 << TAG} }, \
+      |                                                                   ^
+config.h:105:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  105 |         TAGKEYS(                        XK_7,                      6)
+      |         ^~~~~~~
+config.h:50:67: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+   50 |         { MODKEY,                       KEY,      view,           {.ui = 1 << TAG} }, \
+      |                                                                   ^
+config.h:105:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  105 |         TAGKEYS(                        XK_7,                      6)
+      |         ^~~~~~~
+config.h:50:9: Warnung: Elementüberschreitung in struct-Initialisierung
+   50 |         { MODKEY,                       KEY,      view,           {.ui = 1 << TAG} }, \
+      |         ^
+config.h:105:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  105 |         TAGKEYS(                        XK_7,                      6)
+      |         ^~~~~~~
+config.h:50:9: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+   50 |         { MODKEY,                       KEY,      view,           {.ui = 1 << TAG} }, \
+      |         ^
+config.h:105:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  105 |         TAGKEYS(                        XK_7,                      6)
+      |         ^~~~~~~
+config.h:51:9: Fehler: zusätzliche geschweifte Klammern am Ende der Initialisierung
+   51 |         { MODKEY|ControlMask,           KEY,      toggleview,     {.ui = 1 << TAG} }, \
+      |         ^
+config.h:105:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  105 |         TAGKEYS(                        XK_7,                      6)
+      |         ^~~~~~~
+config.h:51:9: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+   51 |         { MODKEY|ControlMask,           KEY,      toggleview,     {.ui = 1 << TAG} }, \
+      |         ^
+config.h:105:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  105 |         TAGKEYS(                        XK_7,                      6)
+      |         ^~~~~~~
+config.h:51:67: Fehler: zusätzliche geschweifte Klammern am Ende der Initialisierung
+   51 |         { MODKEY|ControlMask,           KEY,      toggleview,     {.ui = 1 << TAG} }, \
+      |                                                                   ^
+config.h:105:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  105 |         TAGKEYS(                        XK_7,                      6)
+      |         ^~~~~~~
+config.h:51:67: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+   51 |         { MODKEY|ControlMask,           KEY,      toggleview,     {.ui = 1 << TAG} }, \
+      |                                                                   ^
+config.h:105:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  105 |         TAGKEYS(                        XK_7,                      6)
+      |         ^~~~~~~
+config.h:51:9: Warnung: Elementüberschreitung in struct-Initialisierung
+   51 |         { MODKEY|ControlMask,           KEY,      toggleview,     {.ui = 1 << TAG} }, \
+      |         ^
+config.h:105:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  105 |         TAGKEYS(                        XK_7,                      6)
+      |         ^~~~~~~
+config.h:51:9: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+   51 |         { MODKEY|ControlMask,           KEY,      toggleview,     {.ui = 1 << TAG} }, \
+      |         ^
+config.h:105:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  105 |         TAGKEYS(                        XK_7,                      6)
+      |         ^~~~~~~
+config.h:52:9: Fehler: zusätzliche geschweifte Klammern am Ende der Initialisierung
+   52 |         { MODKEY|ShiftMask,             KEY,      tag,            {.ui = 1 << TAG} }, \
+      |         ^
+config.h:105:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  105 |         TAGKEYS(                        XK_7,                      6)
+      |         ^~~~~~~
+config.h:52:9: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+   52 |         { MODKEY|ShiftMask,             KEY,      tag,            {.ui = 1 << TAG} }, \
+      |         ^
+config.h:105:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  105 |         TAGKEYS(                        XK_7,                      6)
+      |         ^~~~~~~
+config.h:52:67: Fehler: zusätzliche geschweifte Klammern am Ende der Initialisierung
+   52 |         { MODKEY|ShiftMask,             KEY,      tag,            {.ui = 1 << TAG} }, \
+      |                                                                   ^
+config.h:105:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  105 |         TAGKEYS(                        XK_7,                      6)
+      |         ^~~~~~~
+config.h:52:67: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+   52 |         { MODKEY|ShiftMask,             KEY,      tag,            {.ui = 1 << TAG} }, \
+      |                                                                   ^
+config.h:105:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  105 |         TAGKEYS(                        XK_7,                      6)
+      |         ^~~~~~~
+config.h:52:9: Warnung: Elementüberschreitung in struct-Initialisierung
+   52 |         { MODKEY|ShiftMask,             KEY,      tag,            {.ui = 1 << TAG} }, \
+      |         ^
+config.h:105:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  105 |         TAGKEYS(                        XK_7,                      6)
+      |         ^~~~~~~
+config.h:52:9: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+   52 |         { MODKEY|ShiftMask,             KEY,      tag,            {.ui = 1 << TAG} }, \
+      |         ^
+config.h:105:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  105 |         TAGKEYS(                        XK_7,                      6)
+      |         ^~~~~~~
+config.h:53:9: Fehler: zusätzliche geschweifte Klammern am Ende der Initialisierung
+   53 |         { MODKEY|ControlMask|ShiftMask, KEY,      toggletag,      {.ui = 1 << TAG} },
+      |         ^
+config.h:105:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  105 |         TAGKEYS(                        XK_7,                      6)
+      |         ^~~~~~~
+config.h:53:9: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+   53 |         { MODKEY|ControlMask|ShiftMask, KEY,      toggletag,      {.ui = 1 << TAG} },
+      |         ^
+config.h:105:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  105 |         TAGKEYS(                        XK_7,                      6)
+      |         ^~~~~~~
+config.h:53:67: Fehler: zusätzliche geschweifte Klammern am Ende der Initialisierung
+   53 |         { MODKEY|ControlMask|ShiftMask, KEY,      toggletag,      {.ui = 1 << TAG} },
+      |                                                                   ^
+config.h:105:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  105 |         TAGKEYS(                        XK_7,                      6)
+      |         ^~~~~~~
+config.h:53:67: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+   53 |         { MODKEY|ControlMask|ShiftMask, KEY,      toggletag,      {.ui = 1 << TAG} },
+      |                                                                   ^
+config.h:105:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  105 |         TAGKEYS(                        XK_7,                      6)
+      |         ^~~~~~~
+config.h:53:9: Warnung: Elementüberschreitung in struct-Initialisierung
+   53 |         { MODKEY|ControlMask|ShiftMask, KEY,      toggletag,      {.ui = 1 << TAG} },
+      |         ^
+config.h:105:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  105 |         TAGKEYS(                        XK_7,                      6)
+      |         ^~~~~~~
+config.h:53:9: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+   53 |         { MODKEY|ControlMask|ShiftMask, KEY,      toggletag,      {.ui = 1 << TAG} },
+      |         ^
+config.h:105:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  105 |         TAGKEYS(                        XK_7,                      6)
+      |         ^~~~~~~
+config.h:50:9: Fehler: zusätzliche geschweifte Klammern am Ende der Initialisierung
+   50 |         { MODKEY,                       KEY,      view,           {.ui = 1 << TAG} }, \
+      |         ^
+config.h:106:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  106 |         TAGKEYS(                        XK_8,                      7)
+      |         ^~~~~~~
+config.h:50:9: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+   50 |         { MODKEY,                       KEY,      view,           {.ui = 1 << TAG} }, \
+      |         ^
+config.h:106:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  106 |         TAGKEYS(                        XK_8,                      7)
+      |         ^~~~~~~
+config.h:50:67: Fehler: zusätzliche geschweifte Klammern am Ende der Initialisierung
+   50 |         { MODKEY,                       KEY,      view,           {.ui = 1 << TAG} }, \
+      |                                                                   ^
+config.h:106:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  106 |         TAGKEYS(                        XK_8,                      7)
+      |         ^~~~~~~
+config.h:50:67: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+   50 |         { MODKEY,                       KEY,      view,           {.ui = 1 << TAG} }, \
+      |                                                                   ^
+config.h:106:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  106 |         TAGKEYS(                        XK_8,                      7)
+      |         ^~~~~~~
+config.h:50:9: Warnung: Elementüberschreitung in struct-Initialisierung
+   50 |         { MODKEY,                       KEY,      view,           {.ui = 1 << TAG} }, \
+      |         ^
+config.h:106:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  106 |         TAGKEYS(                        XK_8,                      7)
+      |         ^~~~~~~
+config.h:50:9: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+   50 |         { MODKEY,                       KEY,      view,           {.ui = 1 << TAG} }, \
+      |         ^
+config.h:106:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  106 |         TAGKEYS(                        XK_8,                      7)
+      |         ^~~~~~~
+config.h:51:9: Fehler: zusätzliche geschweifte Klammern am Ende der Initialisierung
+   51 |         { MODKEY|ControlMask,           KEY,      toggleview,     {.ui = 1 << TAG} }, \
+      |         ^
+config.h:106:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  106 |         TAGKEYS(                        XK_8,                      7)
+      |         ^~~~~~~
+config.h:51:9: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+   51 |         { MODKEY|ControlMask,           KEY,      toggleview,     {.ui = 1 << TAG} }, \
+      |         ^
+config.h:106:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  106 |         TAGKEYS(                        XK_8,                      7)
+      |         ^~~~~~~
+config.h:51:67: Fehler: zusätzliche geschweifte Klammern am Ende der Initialisierung
+   51 |         { MODKEY|ControlMask,           KEY,      toggleview,     {.ui = 1 << TAG} }, \
+      |                                                                   ^
+config.h:106:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  106 |         TAGKEYS(                        XK_8,                      7)
+      |         ^~~~~~~
+config.h:51:67: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+   51 |         { MODKEY|ControlMask,           KEY,      toggleview,     {.ui = 1 << TAG} }, \
+      |                                                                   ^
+config.h:106:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  106 |         TAGKEYS(                        XK_8,                      7)
+      |         ^~~~~~~
+config.h:51:9: Warnung: Elementüberschreitung in struct-Initialisierung
+   51 |         { MODKEY|ControlMask,           KEY,      toggleview,     {.ui = 1 << TAG} }, \
+      |         ^
+config.h:106:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  106 |         TAGKEYS(                        XK_8,                      7)
+      |         ^~~~~~~
+config.h:51:9: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+   51 |         { MODKEY|ControlMask,           KEY,      toggleview,     {.ui = 1 << TAG} }, \
+      |         ^
+config.h:106:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  106 |         TAGKEYS(                        XK_8,                      7)
+      |         ^~~~~~~
+config.h:52:9: Fehler: zusätzliche geschweifte Klammern am Ende der Initialisierung
+   52 |         { MODKEY|ShiftMask,             KEY,      tag,            {.ui = 1 << TAG} }, \
+      |         ^
+config.h:106:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  106 |         TAGKEYS(                        XK_8,                      7)
+      |         ^~~~~~~
+config.h:52:9: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+   52 |         { MODKEY|ShiftMask,             KEY,      tag,            {.ui = 1 << TAG} }, \
+      |         ^
+config.h:106:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  106 |         TAGKEYS(                        XK_8,                      7)
+      |         ^~~~~~~
+config.h:52:67: Fehler: zusätzliche geschweifte Klammern am Ende der Initialisierung
+   52 |         { MODKEY|ShiftMask,             KEY,      tag,            {.ui = 1 << TAG} }, \
+      |                                                                   ^
+config.h:106:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  106 |         TAGKEYS(                        XK_8,                      7)
+      |         ^~~~~~~
+config.h:52:67: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+   52 |         { MODKEY|ShiftMask,             KEY,      tag,            {.ui = 1 << TAG} }, \
+      |                                                                   ^
+config.h:106:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  106 |         TAGKEYS(                        XK_8,                      7)
+      |         ^~~~~~~
+config.h:52:9: Warnung: Elementüberschreitung in struct-Initialisierung
+   52 |         { MODKEY|ShiftMask,             KEY,      tag,            {.ui = 1 << TAG} }, \
+      |         ^
+config.h:106:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  106 |         TAGKEYS(                        XK_8,                      7)
+      |         ^~~~~~~
+config.h:52:9: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+   52 |         { MODKEY|ShiftMask,             KEY,      tag,            {.ui = 1 << TAG} }, \
+      |         ^
+config.h:106:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  106 |         TAGKEYS(                        XK_8,                      7)
+      |         ^~~~~~~
+config.h:53:9: Fehler: zusätzliche geschweifte Klammern am Ende der Initialisierung
+   53 |         { MODKEY|ControlMask|ShiftMask, KEY,      toggletag,      {.ui = 1 << TAG} },
+      |         ^
+config.h:106:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  106 |         TAGKEYS(                        XK_8,                      7)
+      |         ^~~~~~~
+config.h:53:9: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+   53 |         { MODKEY|ControlMask|ShiftMask, KEY,      toggletag,      {.ui = 1 << TAG} },
+      |         ^
+config.h:106:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  106 |         TAGKEYS(                        XK_8,                      7)
+      |         ^~~~~~~
+config.h:53:67: Fehler: zusätzliche geschweifte Klammern am Ende der Initialisierung
+   53 |         { MODKEY|ControlMask|ShiftMask, KEY,      toggletag,      {.ui = 1 << TAG} },
+      |                                                                   ^
+config.h:106:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  106 |         TAGKEYS(                        XK_8,                      7)
+      |         ^~~~~~~
+config.h:53:67: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+   53 |         { MODKEY|ControlMask|ShiftMask, KEY,      toggletag,      {.ui = 1 << TAG} },
+      |                                                                   ^
+config.h:106:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  106 |         TAGKEYS(                        XK_8,                      7)
+      |         ^~~~~~~
+config.h:53:9: Warnung: Elementüberschreitung in struct-Initialisierung
+   53 |         { MODKEY|ControlMask|ShiftMask, KEY,      toggletag,      {.ui = 1 << TAG} },
+      |         ^
+config.h:106:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  106 |         TAGKEYS(                        XK_8,                      7)
+      |         ^~~~~~~
+config.h:53:9: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+   53 |         { MODKEY|ControlMask|ShiftMask, KEY,      toggletag,      {.ui = 1 << TAG} },
+      |         ^
+config.h:106:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  106 |         TAGKEYS(                        XK_8,                      7)
+      |         ^~~~~~~
+config.h:50:9: Fehler: zusätzliche geschweifte Klammern am Ende der Initialisierung
+   50 |         { MODKEY,                       KEY,      view,           {.ui = 1 << TAG} }, \
+      |         ^
+config.h:107:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  107 |         TAGKEYS(                        XK_9,                      8)
+      |         ^~~~~~~
+config.h:50:9: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+   50 |         { MODKEY,                       KEY,      view,           {.ui = 1 << TAG} }, \
+      |         ^
+config.h:107:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  107 |         TAGKEYS(                        XK_9,                      8)
+      |         ^~~~~~~
+config.h:50:67: Fehler: zusätzliche geschweifte Klammern am Ende der Initialisierung
+   50 |         { MODKEY,                       KEY,      view,           {.ui = 1 << TAG} }, \
+      |                                                                   ^
+config.h:107:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  107 |         TAGKEYS(                        XK_9,                      8)
+      |         ^~~~~~~
+config.h:50:67: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+   50 |         { MODKEY,                       KEY,      view,           {.ui = 1 << TAG} }, \
+      |                                                                   ^
+config.h:107:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  107 |         TAGKEYS(                        XK_9,                      8)
+      |         ^~~~~~~
+config.h:50:9: Warnung: Elementüberschreitung in struct-Initialisierung
+   50 |         { MODKEY,                       KEY,      view,           {.ui = 1 << TAG} }, \
+      |         ^
+config.h:107:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  107 |         TAGKEYS(                        XK_9,                      8)
+      |         ^~~~~~~
+config.h:50:9: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+   50 |         { MODKEY,                       KEY,      view,           {.ui = 1 << TAG} }, \
+      |         ^
+config.h:107:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  107 |         TAGKEYS(                        XK_9,                      8)
+      |         ^~~~~~~
+config.h:51:9: Fehler: zusätzliche geschweifte Klammern am Ende der Initialisierung
+   51 |         { MODKEY|ControlMask,           KEY,      toggleview,     {.ui = 1 << TAG} }, \
+      |         ^
+config.h:107:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  107 |         TAGKEYS(                        XK_9,                      8)
+      |         ^~~~~~~
+config.h:51:9: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+   51 |         { MODKEY|ControlMask,           KEY,      toggleview,     {.ui = 1 << TAG} }, \
+      |         ^
+config.h:107:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  107 |         TAGKEYS(                        XK_9,                      8)
+      |         ^~~~~~~
+config.h:51:67: Fehler: zusätzliche geschweifte Klammern am Ende der Initialisierung
+   51 |         { MODKEY|ControlMask,           KEY,      toggleview,     {.ui = 1 << TAG} }, \
+      |                                                                   ^
+config.h:107:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  107 |         TAGKEYS(                        XK_9,                      8)
+      |         ^~~~~~~
+config.h:51:67: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+   51 |         { MODKEY|ControlMask,           KEY,      toggleview,     {.ui = 1 << TAG} }, \
+      |                                                                   ^
+config.h:107:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  107 |         TAGKEYS(                        XK_9,                      8)
+      |         ^~~~~~~
+config.h:51:9: Warnung: Elementüberschreitung in struct-Initialisierung
+   51 |         { MODKEY|ControlMask,           KEY,      toggleview,     {.ui = 1 << TAG} }, \
+      |         ^
+config.h:107:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  107 |         TAGKEYS(                        XK_9,                      8)
+      |         ^~~~~~~
+config.h:51:9: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+   51 |         { MODKEY|ControlMask,           KEY,      toggleview,     {.ui = 1 << TAG} }, \
+      |         ^
+config.h:107:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  107 |         TAGKEYS(                        XK_9,                      8)
+      |         ^~~~~~~
+config.h:52:9: Fehler: zusätzliche geschweifte Klammern am Ende der Initialisierung
+   52 |         { MODKEY|ShiftMask,             KEY,      tag,            {.ui = 1 << TAG} }, \
+      |         ^
+config.h:107:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  107 |         TAGKEYS(                        XK_9,                      8)
+      |         ^~~~~~~
+config.h:52:9: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+   52 |         { MODKEY|ShiftMask,             KEY,      tag,            {.ui = 1 << TAG} }, \
+      |         ^
+config.h:107:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  107 |         TAGKEYS(                        XK_9,                      8)
+      |         ^~~~~~~
+config.h:52:67: Fehler: zusätzliche geschweifte Klammern am Ende der Initialisierung
+   52 |         { MODKEY|ShiftMask,             KEY,      tag,            {.ui = 1 << TAG} }, \
+      |                                                                   ^
+config.h:107:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  107 |         TAGKEYS(                        XK_9,                      8)
+      |         ^~~~~~~
+config.h:52:67: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+   52 |         { MODKEY|ShiftMask,             KEY,      tag,            {.ui = 1 << TAG} }, \
+      |                                                                   ^
+config.h:107:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  107 |         TAGKEYS(                        XK_9,                      8)
+      |         ^~~~~~~
+config.h:52:9: Warnung: Elementüberschreitung in struct-Initialisierung
+   52 |         { MODKEY|ShiftMask,             KEY,      tag,            {.ui = 1 << TAG} }, \
+      |         ^
+config.h:107:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  107 |         TAGKEYS(                        XK_9,                      8)
+      |         ^~~~~~~
+config.h:52:9: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+   52 |         { MODKEY|ShiftMask,             KEY,      tag,            {.ui = 1 << TAG} }, \
+      |         ^
+config.h:107:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  107 |         TAGKEYS(                        XK_9,                      8)
+      |         ^~~~~~~
+config.h:53:9: Fehler: zusätzliche geschweifte Klammern am Ende der Initialisierung
+   53 |         { MODKEY|ControlMask|ShiftMask, KEY,      toggletag,      {.ui = 1 << TAG} },
+      |         ^
+config.h:107:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  107 |         TAGKEYS(                        XK_9,                      8)
+      |         ^~~~~~~
+config.h:53:9: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+   53 |         { MODKEY|ControlMask|ShiftMask, KEY,      toggletag,      {.ui = 1 << TAG} },
+      |         ^
+config.h:107:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  107 |         TAGKEYS(                        XK_9,                      8)
+      |         ^~~~~~~
+config.h:53:67: Fehler: zusätzliche geschweifte Klammern am Ende der Initialisierung
+   53 |         { MODKEY|ControlMask|ShiftMask, KEY,      toggletag,      {.ui = 1 << TAG} },
+      |                                                                   ^
+config.h:107:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  107 |         TAGKEYS(                        XK_9,                      8)
+      |         ^~~~~~~
+config.h:53:67: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+   53 |         { MODKEY|ControlMask|ShiftMask, KEY,      toggletag,      {.ui = 1 << TAG} },
+      |                                                                   ^
+config.h:107:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  107 |         TAGKEYS(                        XK_9,                      8)
+      |         ^~~~~~~
+config.h:53:9: Warnung: Elementüberschreitung in struct-Initialisierung
+   53 |         { MODKEY|ControlMask|ShiftMask, KEY,      toggletag,      {.ui = 1 << TAG} },
+      |         ^
+config.h:107:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  107 |         TAGKEYS(                        XK_9,                      8)
+      |         ^~~~~~~
+config.h:53:9: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+   53 |         { MODKEY|ControlMask|ShiftMask, KEY,      toggletag,      {.ui = 1 << TAG} },
+      |         ^
+config.h:107:9: Anmerkung: bei Substitution des Makros »TAGKEYS«
+  107 |         TAGKEYS(                        XK_9,                      8)
+      |         ^~~~~~~
+In Datei, eingebunden von dwm.c:273:
+config.h:108:9: Fehler: zusätzliche geschweifte Klammern am Ende der Initialisierung
+  108 |         { MODKEY|ShiftMask,             XK_q,      quit,           {0} },
+      |         ^
+config.h:108:9: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+config.h:108:68: Fehler: zusätzliche geschweifte Klammern am Ende der Initialisierung
+  108 |         { MODKEY|ShiftMask,             XK_q,      quit,           {0} },
+      |                                                                    ^
+config.h:108:68: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+config.h:108:9: Warnung: Elementüberschreitung in struct-Initialisierung
+  108 |         { MODKEY|ShiftMask,             XK_q,      quit,           {0} },
+      |         ^
+config.h:108:9: Anmerkung: (nahe der Initialisierung für »keys[18]«)
+config.h:109:2: Fehler: expected »}« before »;« token
+  109 | };
+      |  ^
+config.h:68:21: Anmerkung: andere Fundstelle von »{« ist hier
+   68 | static Key keys[] = {
+      |                     ^
+dwm.c:145:13: Warnung: »applyrules« als »static« deklariert, aber nirgendwo definiert [-Wunused-function]
+  145 | static void applyrules(Client *c);
+      |             ^~~~~~~~~~
+dwm.c:146:12: Warnung: »applysizehints« als »static« deklariert, aber nirgendwo definiert [-Wunused-function]
+  146 | static int applysizehints(Client *c, int *x, int *y, int *w, int *h, int interact);
+      |            ^~~~~~~~~~~~~~
+dwm.c:147:13: Warnung: »arrange« als »static« deklariert, aber nirgendwo definiert [-Wunused-function]
+  147 | static void arrange(Monitor *m);
+      |             ^~~~~~~
+dwm.c:148:13: Warnung: »arrangemon« als »static« deklariert, aber nirgendwo definiert [-Wunused-function]
+  148 | static void arrangemon(Monitor *m);
+      |             ^~~~~~~~~~
+dwm.c:149:13: Warnung: »attach« als »static« deklariert, aber nirgendwo definiert [-Wunused-function]
+  149 | static void attach(Client *c);
+      |             ^~~~~~
+dwm.c:150:13: Warnung: »attachstack« als »static« deklariert, aber nirgendwo definiert [-Wunused-function]
+  150 | static void attachstack(Client *c);
+      |             ^~~~~~~~~~~
+dwm.c:151:13: Warnung: »buttonpress« verwendet, aber nirgendwo definiert
+  151 | static void buttonpress(XEvent *e);
+      |             ^~~~~~~~~~~
+dwm.c:152:13: Warnung: »checkotherwm« als »static« deklariert, aber nirgendwo definiert [-Wunused-function]
+  152 | static void checkotherwm(void);
+      |             ^~~~~~~~~~~~
+dwm.c:153:13: Warnung: »cleanup« als »static« deklariert, aber nirgendwo definiert [-Wunused-function]
+  153 | static void cleanup(void);
+      |             ^~~~~~~
+dwm.c:154:13: Warnung: »cleanupmon« als »static« deklariert, aber nirgendwo definiert [-Wunused-function]
+  154 | static void cleanupmon(Monitor *mon);
+      |             ^~~~~~~~~~
+dwm.c:155:13: Warnung: »clientmessage« verwendet, aber nirgendwo definiert
+  155 | static void clientmessage(XEvent *e);
+      |             ^~~~~~~~~~~~~
+dwm.c:156:13: Warnung: »configure« als »static« deklariert, aber nirgendwo definiert [-Wunused-function]
+  156 | static void configure(Client *c);
+      |             ^~~~~~~~~
+dwm.c:157:13: Warnung: »configurenotify« verwendet, aber nirgendwo definiert
+  157 | static void configurenotify(XEvent *e);
+      |             ^~~~~~~~~~~~~~~
+dwm.c:158:13: Warnung: »configurerequest« verwendet, aber nirgendwo definiert
+  158 | static void configurerequest(XEvent *e);
+      |             ^~~~~~~~~~~~~~~~
+dwm.c:159:17: Warnung: »createmon« als »static« deklariert, aber nirgendwo definiert [-Wunused-function]
+  159 | static Monitor *createmon(void);
+      |                 ^~~~~~~~~
+dwm.c:160:13: Warnung: »destroynotify« verwendet, aber nirgendwo definiert
+  160 | static void destroynotify(XEvent *e);
+      |             ^~~~~~~~~~~~~
+dwm.c:161:13: Warnung: »detach« als »static« deklariert, aber nirgendwo definiert [-Wunused-function]
+  161 | static void detach(Client *c);
+      |             ^~~~~~
+dwm.c:162:13: Warnung: »detachstack« als »static« deklariert, aber nirgendwo definiert [-Wunused-function]
+  162 | static void detachstack(Client *c);
+      |             ^~~~~~~~~~~
+dwm.c:163:17: Warnung: »dirtomon« als »static« deklariert, aber nirgendwo definiert [-Wunused-function]
+  163 | static Monitor *dirtomon(int dir);
+      |                 ^~~~~~~~
+dwm.c:164:13: Warnung: »drawbar« als »static« deklariert, aber nirgendwo definiert [-Wunused-function]
+  164 | static void drawbar(Monitor *m);
+      |             ^~~~~~~
+dwm.c:165:13: Warnung: »drawbars« als »static« deklariert, aber nirgendwo definiert [-Wunused-function]
+  165 | static void drawbars(void);
+      |             ^~~~~~~~
+dwm.c:166:13: Warnung: »enternotify« verwendet, aber nirgendwo definiert
+  166 | static void enternotify(XEvent *e);
+      |             ^~~~~~~~~~~
+dwm.c:167:13: Warnung: »expose« verwendet, aber nirgendwo definiert
+  167 | static void expose(XEvent *e);
+      |             ^~~~~~
+dwm.c:168:13: Warnung: »focus« als »static« deklariert, aber nirgendwo definiert [-Wunused-function]
+  168 | static void focus(Client *c);
+      |             ^~~~~
+dwm.c:169:13: Warnung: »focusin« verwendet, aber nirgendwo definiert
+  169 | static void focusin(XEvent *e);
+      |             ^~~~~~~
+dwm.c:170:13: Warnung: »focusmon« verwendet, aber nirgendwo definiert
+  170 | static void focusmon(const Arg *arg);
+      |             ^~~~~~~~
+dwm.c:171:13: Warnung: »focusstack« verwendet, aber nirgendwo definiert
+  171 | static void focusstack(const Arg *arg);
+      |             ^~~~~~~~~~
+dwm.c:172:13: Warnung: »getatomprop« als »static« deklariert, aber nirgendwo definiert [-Wunused-function]
+  172 | static Atom getatomprop(Client *c, Atom prop);
+      |             ^~~~~~~~~~~
+dwm.c:173:12: Warnung: »getrootptr« als »static« deklariert, aber nirgendwo definiert [-Wunused-function]
+  173 | static int getrootptr(int *x, int *y);
+      |            ^~~~~~~~~~
+dwm.c:174:13: Warnung: »getstate« als »static« deklariert, aber nirgendwo definiert [-Wunused-function]
+  174 | static long getstate(Window w);
+      |             ^~~~~~~~
+dwm.c:175:12: Warnung: »gettextprop« als »static« deklariert, aber nirgendwo definiert [-Wunused-function]
+  175 | static int gettextprop(Window w, Atom atom, char *text, unsigned int size);
+      |            ^~~~~~~~~~~
+dwm.c:176:13: Warnung: »grabbuttons« als »static« deklariert, aber nirgendwo definiert [-Wunused-function]
+  176 | static void grabbuttons(Client *c, int focused);
+      |             ^~~~~~~~~~~
+dwm.c:177:13: Warnung: »grabkeys« als »static« deklariert, aber nirgendwo definiert [-Wunused-function]
+  177 | static void grabkeys(void);
+      |             ^~~~~~~~
+dwm.c:178:13: Warnung: »incnmaster« verwendet, aber nirgendwo definiert
+  178 | static void incnmaster(const Arg *arg);
+      |             ^~~~~~~~~~
+dwm.c:179:13: Warnung: »keypress« verwendet, aber nirgendwo definiert
+  179 | static void keypress(XEvent *e);
+      |             ^~~~~~~~
+dwm.c:180:13: Warnung: »killclient« verwendet, aber nirgendwo definiert
+  180 | static void killclient(const Arg *arg);
+      |             ^~~~~~~~~~
+dwm.c:181:13: Warnung: »manage« als »static« deklariert, aber nirgendwo definiert [-Wunused-function]
+  181 | static void manage(Window w, XWindowAttributes *wa);
+      |             ^~~~~~
+dwm.c:182:13: Warnung: »mappingnotify« verwendet, aber nirgendwo definiert
+  182 | static void mappingnotify(XEvent *e);
+      |             ^~~~~~~~~~~~~
+dwm.c:183:13: Warnung: »maprequest« verwendet, aber nirgendwo definiert
+  183 | static void maprequest(XEvent *e);
+      |             ^~~~~~~~~~
+dwm.c:184:13: Warnung: »monocle« verwendet, aber nirgendwo definiert
+  184 | static void monocle(Monitor *m);
+      |             ^~~~~~~
+dwm.c:185:13: Warnung: »motionnotify« verwendet, aber nirgendwo definiert
+  185 | static void motionnotify(XEvent *e);
+      |             ^~~~~~~~~~~~
+dwm.c:186:13: Warnung: »movemouse« als »static« deklariert, aber nirgendwo definiert [-Wunused-function]
+  186 | static void movemouse(const Arg *arg);
+      |             ^~~~~~~~~
+dwm.c:187:16: Warnung: »nexttiled« als »static« deklariert, aber nirgendwo definiert [-Wunused-function]
+  187 | static Client *nexttiled(Client *c);
+      |                ^~~~~~~~~
+dwm.c:188:13: Warnung: »pop« als »static« deklariert, aber nirgendwo definiert [-Wunused-function]
+  188 | static void pop(Client *);
+      |             ^~~
+dwm.c:189:13: Warnung: »propertynotify« verwendet, aber nirgendwo definiert
+  189 | static void propertynotify(XEvent *e);
+      |             ^~~~~~~~~~~~~~
+dwm.c:190:13: Warnung: »quit« verwendet, aber nirgendwo definiert
+  190 | static void quit(const Arg *arg);
+      |             ^~~~
+dwm.c:191:17: Warnung: »recttomon« als »static« deklariert, aber nirgendwo definiert [-Wunused-function]
+  191 | static Monitor *recttomon(int x, int y, int w, int h);
+      |                 ^~~~~~~~~
+dwm.c:192:13: Warnung: »resize« als »static« deklariert, aber nirgendwo definiert [-Wunused-function]
+  192 | static void resize(Client *c, int x, int y, int w, int h, int interact);
+      |             ^~~~~~
+dwm.c:193:13: Warnung: »resizeclient« als »static« deklariert, aber nirgendwo definiert [-Wunused-function]
+  193 | static void resizeclient(Client *c, int x, int y, int w, int h);
+      |             ^~~~~~~~~~~~
+dwm.c:194:13: Warnung: »resizemouse« als »static« deklariert, aber nirgendwo definiert [-Wunused-function]
+  194 | static void resizemouse(const Arg *arg);
+      |             ^~~~~~~~~~~
+dwm.c:195:13: Warnung: »restack« als »static« deklariert, aber nirgendwo definiert [-Wunused-function]
+  195 | static void restack(Monitor *m);
+      |             ^~~~~~~
+dwm.c:196:13: Warnung: »run« als »static« deklariert, aber nirgendwo definiert [-Wunused-function]
+  196 | static void run(void);
+      |             ^~~
+dwm.c:197:13: Warnung: »scan« als »static« deklariert, aber nirgendwo definiert [-Wunused-function]
+  197 | static void scan(void);
+      |             ^~~~
+dwm.c:198:12: Warnung: »sendevent« als »static« deklariert, aber nirgendwo definiert [-Wunused-function]
+  198 | static int sendevent(Client *c, Atom proto);
+      |            ^~~~~~~~~
+dwm.c:199:13: Warnung: »sendmon« als »static« deklariert, aber nirgendwo definiert [-Wunused-function]
+  199 | static void sendmon(Client *c, Monitor *m);
+      |             ^~~~~~~
+dwm.c:200:13: Warnung: »setclientstate« als »static« deklariert, aber nirgendwo definiert [-Wunused-function]
+  200 | static void setclientstate(Client *c, long state);
+      |             ^~~~~~~~~~~~~~
+dwm.c:201:13: Warnung: »setfocus« als »static« deklariert, aber nirgendwo definiert [-Wunused-function]
+  201 | static void setfocus(Client *c);
+      |             ^~~~~~~~
+dwm.c:202:13: Warnung: »setfullscreen« als »static« deklariert, aber nirgendwo definiert [-Wunused-function]
+  202 | static void setfullscreen(Client *c, int fullscreen);
+      |             ^~~~~~~~~~~~~
+dwm.c:203:13: Warnung: »setlayout« verwendet, aber nirgendwo definiert
+  203 | static void setlayout(const Arg *arg);
+      |             ^~~~~~~~~
+dwm.c:204:13: Warnung: »setmfact« verwendet, aber nirgendwo definiert
+  204 | static void setmfact(const Arg *arg);
+      |             ^~~~~~~~
+dwm.c:205:13: Warnung: »setup« als »static« deklariert, aber nirgendwo definiert [-Wunused-function]
+  205 | static void setup(void);
+      |             ^~~~~
+dwm.c:206:13: Warnung: »seturgent« als »static« deklariert, aber nirgendwo definiert [-Wunused-function]
+  206 | static void seturgent(Client *c, int urg);
+      |             ^~~~~~~~~
+dwm.c:207:13: Warnung: »showhide« als »static« deklariert, aber nirgendwo definiert [-Wunused-function]
+  207 | static void showhide(Client *c);
+      |             ^~~~~~~~
+dwm.c:208:13: Warnung: »sigchld« als »static« deklariert, aber nirgendwo definiert [-Wunused-function]
+  208 | static void sigchld(int unused);
+      |             ^~~~~~~
+dwm.c:209:13: Warnung: »spawn« verwendet, aber nirgendwo definiert
+  209 | static void spawn(const Arg *arg);
+      |             ^~~~~
+dwm.c:210:13: Warnung: »tag« verwendet, aber nirgendwo definiert
+  210 | static void tag(const Arg *arg);
+      |             ^~~
+dwm.c:211:13: Warnung: »tagmon« verwendet, aber nirgendwo definiert
+  211 | static void tagmon(const Arg *arg);
+      |             ^~~~~~
+dwm.c:212:13: Warnung: »tile« verwendet, aber nirgendwo definiert
+  212 | static void tile(Monitor *);
+      |             ^~~~
+dwm.c:213:13: Warnung: »togglebar« verwendet, aber nirgendwo definiert
+  213 | static void togglebar(const Arg *arg);
+      |             ^~~~~~~~~
+dwm.c:214:13: Warnung: »togglefloating« verwendet, aber nirgendwo definiert
+  214 | static void togglefloating(const Arg *arg);
+      |             ^~~~~~~~~~~~~~
+dwm.c:215:13: Warnung: »toggletag« verwendet, aber nirgendwo definiert
+  215 | static void toggletag(const Arg *arg);
+      |             ^~~~~~~~~
+dwm.c:216:13: Warnung: »toggleview« verwendet, aber nirgendwo definiert
+  216 | static void toggleview(const Arg *arg);
+      |             ^~~~~~~~~~
+dwm.c:217:13: Warnung: »unfocus« als »static« deklariert, aber nirgendwo definiert [-Wunused-function]
+  217 | static void unfocus(Client *c, int setfocus);
+      |             ^~~~~~~
+dwm.c:218:13: Warnung: »unmanage« als »static« deklariert, aber nirgendwo definiert [-Wunused-function]
+  218 | static void unmanage(Client *c, int destroyed);
+      |             ^~~~~~~~
+dwm.c:219:13: Warnung: »unmapnotify« verwendet, aber nirgendwo definiert
+  219 | static void unmapnotify(XEvent *e);
+      |             ^~~~~~~~~~~
+dwm.c:220:13: Warnung: »updatebarpos« als »static« deklariert, aber nirgendwo definiert [-Wunused-function]
+  220 | static void updatebarpos(Monitor *m);
+      |             ^~~~~~~~~~~~
+dwm.c:221:13: Warnung: »updatebars« als »static« deklariert, aber nirgendwo definiert [-Wunused-function]
+  221 | static void updatebars(void);
+      |             ^~~~~~~~~~
+dwm.c:222:13: Warnung: »updateclientlist« als »static« deklariert, aber nirgendwo definiert [-Wunused-function]
+  222 | static void updateclientlist(void);
+      |             ^~~~~~~~~~~~~~~~
+dwm.c:223:12: Warnung: »updategeom« als »static« deklariert, aber nirgendwo definiert [-Wunused-function]
+  223 | static int updategeom(void);
+      |            ^~~~~~~~~~
+dwm.c:224:13: Warnung: »updatenumlockmask« als »static« deklariert, aber nirgendwo definiert [-Wunused-function]
+  224 | static void updatenumlockmask(void);
+      |             ^~~~~~~~~~~~~~~~~
+dwm.c:225:13: Warnung: »updatesizehints« als »static« deklariert, aber nirgendwo definiert [-Wunused-function]
+  225 | static void updatesizehints(Client *c);
+      |             ^~~~~~~~~~~~~~~
+dwm.c:226:13: Warnung: »updatestatus« als »static« deklariert, aber nirgendwo definiert [-Wunused-function]
+  226 | static void updatestatus(void);
+      |             ^~~~~~~~~~~~
+dwm.c:227:13: Warnung: »updatetitle« als »static« deklariert, aber nirgendwo definiert [-Wunused-function]
+  227 | static void updatetitle(Client *c);
+      |             ^~~~~~~~~~~
+dwm.c:228:13: Warnung: »updatewindowtype« als »static« deklariert, aber nirgendwo definiert [-Wunused-function]
+  228 | static void updatewindowtype(Client *c);
+      |             ^~~~~~~~~~~~~~~~
+dwm.c:229:13: Warnung: »updatewmhints« als »static« deklariert, aber nirgendwo definiert [-Wunused-function]
+  229 | static void updatewmhints(Client *c);
+      |             ^~~~~~~~~~~~~
+dwm.c:230:13: Warnung: »view« verwendet, aber nirgendwo definiert
+  230 | static void view(const Arg *arg);
+      |             ^~~~
+dwm.c:231:16: Warnung: »wintoclient« als »static« deklariert, aber nirgendwo definiert [-Wunused-function]
+  231 | static Client *wintoclient(Window w);
+      |                ^~~~~~~~~~~
+dwm.c:232:17: Warnung: »wintomon« als »static« deklariert, aber nirgendwo definiert [-Wunused-function]
+  232 | static Monitor *wintomon(Window w);
+      |                 ^~~~~~~~
+dwm.c:233:12: Warnung: »xerror« als »static« deklariert, aber nirgendwo definiert [-Wunused-function]
+  233 | static int xerror(Display *dpy, XErrorEvent *ee);
+      |            ^~~~~~
+dwm.c:234:12: Warnung: »xerrordummy« als »static« deklariert, aber nirgendwo definiert [-Wunused-function]
+  234 | static int xerrordummy(Display *dpy, XErrorEvent *ee);
+      |            ^~~~~~~~~~~
+dwm.c:235:12: Warnung: »xerrorstart« als »static« deklariert, aber nirgendwo definiert [-Wunused-function]
+  235 | static int xerrorstart(Display *dpy, XErrorEvent *ee);
+      |            ^~~~~~~~~~~
+dwm.c:236:13: Warnung: »zoom« verwendet, aber nirgendwo definiert
+  236 | static void zoom(const Arg *arg);
+      |             ^~~~
+In Datei, eingebunden von dwm.c:273:
+config.h:68:12: Warnung: »keys« definiert, aber nicht verwendet [-Wunused-variable]
+   68 | static Key keys[] = {
+      |            ^~~~
+In Datei, eingebunden von dwm.c:273:
+config.h:22:20: Warnung: »tags« definiert, aber nicht verwendet [-Wunused-variable]
+   22 | static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
+      |                    ^~~~
+config.h:15:20: Warnung: »colors« definiert, aber nicht verwendet [-Wunused-variable]
+   15 | static const char *colors[][3]      = {
+      |                    ^~~~~~
+config.h:8:20: Warnung: »fonts« definiert, aber nicht verwendet [-Wunused-variable]
+    8 | static const char *fonts[]          = { "UbuntuMono:size=10" };
+      |                    ^~~~~
+dwm.c:270:21: Warnung: »wmcheckwin« definiert, aber nicht verwendet [-Wunused-variable]
+  270 | static Window root, wmcheckwin;
+      |                     ^~~~~~~~~~
+dwm.c:270:15: Warnung: »root« definiert, aber nicht verwendet [-Wunused-variable]
+  270 | static Window root, wmcheckwin;
+      |               ^~~~
+dwm.c:269:24: Warnung: »selmon« definiert, aber nicht verwendet [-Wunused-variable]
+  269 | static Monitor *mons, *selmon;
+      |                        ^~~~~~
+dwm.c:269:17: Warnung: »mons« definiert, aber nicht verwendet [-Wunused-variable]
+  269 | static Monitor *mons, *selmon;
+      |                 ^~~~
+dwm.c:268:13: Warnung: »drw« definiert, aber nicht verwendet [-Wunused-variable]
+  268 | static Drw *drw;
+      |             ^~~
+dwm.c:267:17: Warnung: »dpy« definiert, aber nicht verwendet [-Wunused-variable]
+  267 | static Display *dpy;
+      |                 ^~~
+dwm.c:266:14: Warnung: »scheme« definiert, aber nicht verwendet [-Wunused-variable]
+  266 | static Clr **scheme;
+      |              ^~~~~~
+dwm.c:265:13: Warnung: »cursor« definiert, aber nicht verwendet [-Wunused-variable]
+  265 | static Cur *cursor[CurLast];
+      |             ^~~~~~
+dwm.c:264:12: Warnung: »running« definiert, aber nicht verwendet [-Wunused-variable]
+  264 | static int running = 1;
+      |            ^~~~~~~
+dwm.c:263:29: Warnung: »netatom« definiert, aber nicht verwendet [-Wunused-variable]
+  263 | static Atom wmatom[WMLast], netatom[NetLast];
+      |                             ^~~~~~~
+dwm.c:263:13: Warnung: »wmatom« definiert, aber nicht verwendet [-Wunused-variable]
+  263 | static Atom wmatom[WMLast], netatom[NetLast];
+      |             ^~~~~~
+dwm.c:247:15: Warnung: »handler« definiert, aber nicht verwendet [-Wunused-variable]
+  247 | static void (*handler[LASTEvent]) (XEvent *) = {
+      |               ^~~~~~~
+dwm.c:246:21: Warnung: »numlockmask« definiert, aber nicht verwendet [-Wunused-variable]
+  246 | static unsigned int numlockmask = 0;
+      |                     ^~~~~~~~~~~
+dwm.c:245:14: Warnung: »xerrorxlib« definiert, aber nicht verwendet [-Wunused-variable]
+  245 | static int (*xerrorxlib)(Display *, XErrorEvent *);
+      |              ^~~~~~~~~~
+dwm.c:244:12: Warnung: »lrpad« definiert, aber nicht verwendet [-Wunused-variable]
+  244 | static int lrpad;            /* sum of left and right padding for text */
+      |            ^~~~~
+dwm.c:243:16: Warnung: »blw« definiert, aber nicht verwendet [-Wunused-variable]
+  243 | static int bh, blw = 0;      /* bar geometry */
+      |                ^~~
+dwm.c:243:12: Warnung: »bh« definiert, aber nicht verwendet [-Wunused-variable]
+  243 | static int bh, blw = 0;      /* bar geometry */
+      |            ^~
+dwm.c:242:16: Warnung: »sh« definiert, aber nicht verwendet [-Wunused-variable]
+  242 | static int sw, sh;           /* X display screen geometry width, height */
+      |                ^~
+dwm.c:242:12: Warnung: »sw« definiert, aber nicht verwendet [-Wunused-variable]
+  242 | static int sw, sh;           /* X display screen geometry width, height */
+      |            ^~
+dwm.c:241:12: Warnung: »screen« definiert, aber nicht verwendet [-Wunused-variable]
+  241 | static int screen;
+      |            ^~~~~~
+dwm.c:240:13: Warnung: »stext« definiert, aber nicht verwendet [-Wunused-variable]
+  240 | static char stext[256];
+      |             ^~~~~
+dwm.c:239:19: Warnung: »broken« definiert, aber nicht verwendet [-Wunused-const-variable=]
+  239 | static const char broken[] = "broken";
+      |                   ^~~~~~
+make: *** [Makefile:18: dwm.o] Fehler 1
