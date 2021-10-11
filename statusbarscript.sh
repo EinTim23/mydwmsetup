@@ -8,7 +8,7 @@ speicher=$(df -h | grep '/dev/mapper/cryptroot' | awk -F ' ' '{print $4}')
 date=$(date -d '-2 hours' '+%d.%m.%Y %X')
 sound=$(pamixer --get-volume)
 cpu=$(grep 'cpu ' /proc/stat | awk '{usage=($2+$4)*100/($2+$4+$5)} END {print usage "%"}')
-res="CPU: "$cpu" Memory: "$ram"MB SSD: "$speicher" Sound: "$sound"% ""Date: "$date
-xsetroot -name "$res"
+res="\uf2db : "$cpu" \uf1c0 : "$ram"MB \uf0a0 : "$speicher" \uf028 : "$sound"% ""\uf017 : "$date
+xsetroot -name "$(echo -e $res)"
 sleep 1
 done
